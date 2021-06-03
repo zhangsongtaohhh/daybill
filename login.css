@@ -1,0 +1,91 @@
+:root
+{
+background: #d87366;
+}
+#bottom
+{
+    position: absolute;
+    text-align:center;
+    font-size: 12px;
+    left: 30%;
+    bottom: 0px;/*表明位置的*/
+        　
+} 
+span/*标题的字体*/
+ {
+    font-family:;
+    font-size: 30px;
+    color:#d87366;
+ }
+button,.button/*按钮改变前*/
+{
+    background-color:rgba(255, 255, 255, 0.514);
+    border:  aqua;
+    color: #9b554b;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border-radius: 20%; */
+    cursor: pointer;
+}
+button:hover,.button:hover/*按钮显示改变阴影与圆角*/
+{
+    background-color:rgba(255, 255, 255, 0.103);
+    border-radius: 0%;
+    border: 1px solid cornflowerblue;
+    
+}
+.vx,a/*去除超链接的样式*/
+{
+    float: none;
+    text-decoration-line: none
+}
+.mima{
+    color: #d86655;
+}
+.mima:hover/*鼠标悬浮样式（明显一点的）*/
+{
+    color: #9b554b;
+    text-shadow:2px 2px cornflowerblue ;
+}
+p{overflow: hidden;}
+label/*表单字体位置改变*/
+{
+    color: #9b554b;
+    font-weight: bold;
+    float:left;
+    width:100px;
+    height:40px;
+    line-height:50px;
+    text-align:right;
+}
+[type=text],[type=password]
+{
+    float: left;
+    width: 200px;
+    padding: 8px 3px;
+    margin-top: 8px;
+    margin-left: 10px;
+    border: 1px solid rgb(13, 72, 184);
+    border-radius: 5px;
+}
+
+#son /*表单背景和边框*/
+{
+    width: 400px;
+    height: 280px; 
+    position: relative;
+    overflow: hidden;
+    padding: 5px 3px 13px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5%;
+    text-align:center;
+}
+ #son/*表单居中,而且貌似只能放最后不然冲到天上去。。可能是因为优先级但是我还是背不到。。*/
+{
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+}
