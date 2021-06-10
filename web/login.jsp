@@ -5,7 +5,7 @@
   Time: 1:57 下午
   To change this template use File | Settings | File Templates.
 --%>
-<% String path= request.getContextPath(); %>
+<% String path= request.getContextPath(); %> <%--获取根路径--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -23,7 +23,8 @@
             <span >login</span>
         </legend>
         <p>
-            ${error}
+            <%--回显账户不存在--%>${no}
+           <%--回显密码错误--%>${error}
             <label>用户名:</label>
             <input type="text" size="30" maxlength="14" minlength="3" id="username" name="username" value="${username}" placeholder="请输入用户名">
         </p>
@@ -47,6 +48,7 @@
 </body>
 </html>
 <script>
+   /* click按钮调用onclick 判断情况*/
     function loginverify(){
         var username =document.getElementById("username").value;
         var password =document.getElementById("password").value;
@@ -59,7 +61,11 @@
             return;
         }
         if(password.length<8){
-            alert("密码必须大于8位！")
+            alert("密码必须大于等于8位！")
+            return;
+        }
+        if(username.length<3){
+            alert("用户名必须大于等于3位！")
             return;
         }
         // 调用后端servlet 并将数据进行传递
