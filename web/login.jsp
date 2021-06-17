@@ -64,7 +64,7 @@
         <p>
             <span class="remember"> 记住密码</span>
             <input type="checkbox" name="checkbox1" value="checkbox" checked="<%=checked%>">
-            <a href="#" target="_blank" class="register">点此注册>> </a><br>
+            <a href="register.jsp" target="_blank" class="register">点此注册>> </a><br>
             <a href="#" target="_blank" class="register">游客访问>> </a>
 
         </p>
