@@ -18,6 +18,7 @@ $(function() {
         $(".money").val("");
         $(".myinput").css("display","block");
         type=$(this).children().children("span").html();
+        $(".typeInput").val(type);
         // console.log(type);
     });
     $("#gobtn").click(function () {

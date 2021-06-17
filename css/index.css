@@ -53,3 +53,13 @@
 #td-delete{
     color: red;
 }
+.money{
+    width: 70%;
+    float: left;
+}
+.typeInput{
+    display: none;
+    width: 100px;
+    height: 30px;
+    border: 1px solid red;
+}

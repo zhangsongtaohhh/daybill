@@ -24,7 +24,7 @@
 
             </ul>
         </div>
-        <a href="#"><span class="glyphicon glyphicon-signal  header-count" ></span></a>
+        <a href="stastics.html"><span class="glyphicon glyphicon-signal  header-count" ></span></a>
     </div>
     <div class="content">
         <table class="table table-condensed .table-hover">
@@ -43,7 +43,8 @@
         <div class="row myinput" style="display: none">
             <div class="col-lg-6">
                 <div class="input-group">
-                    <input type="text" class="form-control money" placeholder="金额">
+                    <input type="text" class=" typeInput" placeholder="" name="type">
+                    <input type="text" class="form-control money" placeholder="金额" name="event">
                     <span class="input-group-btn">
         <button class="btn btn-default " type="button" id="gobtn">确定</button>
       </span>
@@ -66,5 +67,7 @@
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="lib/bootstarp/js/bootstrap.min.js"></script>
 <script src="js/index.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/connect.js"></script>
 </body>
 </html>
