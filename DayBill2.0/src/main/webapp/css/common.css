@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after{
+    /*所有的标签和伪元素都选中*/
+    margin: 0;
+    padding: 0;
+    /*移动端常用布局时非固定像素*/
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /*    可以有效的防止内容溢出*/
+
+    /*    设置点击的高亮显示*/
+    tap-highlight-color:transparent;
+    -webkit-tap-highlight-color: transparent;
+
+}
+body{
+    font-size: 14px;
+    font-family: "Microsoft Sans Serif",sans-serif;
+    /*    表示如果没有浏览器不支持前面的那个字体，那么就用手机自带的字体*/
+    color: #333;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+input,textarea{
+    border: none;
+    outline: none;
+    resize:none;
+    /*    不允许改变尺寸*/
+    -webkit-appearance: none;
+    /*    元素的外观    none表示没有任何的样式*/
+}
+
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.clearFix::after,.clearFix::before{
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+

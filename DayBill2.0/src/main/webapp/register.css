@@ -1,0 +1,88 @@
+:root
+{
+background: #d87366;
+}
+#bottom
+{
+    position: absolute;
+    text-align:center;
+    font-size: 0.75rem;
+    left: 30%;
+    bottom: 0 ;
+} 
+span/*标题的字体*/{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.6rem;
+    color:#d87366;
+ }
+button,.button/*按钮改变前*/
+{
+    background-color:rgba(255, 255, 255, 0.514);
+    border:  aqua;
+    color: #9b554b;
+    padding: 0.32rem 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border-radius: 20%; */
+    cursor: pointer;
+}
+button:hover,.button:hover/*按钮显示改变阴影与圆角*/
+{
+    background-color:rgba(255, 255, 255, 0.103);
+    border-radius: 0%;
+    border: 1px solid cornflowerblue;
+    
+}
+.remember{
+    font-size: 1rem;
+    color: #9b554b;
+}
+.vx,a/*去除超链接的样式*/
+{
+    float: none;
+    text-decoration-line: none
+}
+.register{
+    color: #d86655;
+}
+p{overflow: hidden;}
+label/*表单字体位置改变*/
+{
+    color: #9b554b;
+    font-weight: bold;
+    float:left;
+    width:6.25rem;
+    height:2.5rem;
+    line-height:3.125rem;
+    text-align:right;
+}
+[type=text],[type=password]
+{
+    float: left;
+    width: 12.5rem;
+    padding: 0.5rem 0.2rem;
+    margin-top: 0.5rem;
+    margin-left: 0.625rem;
+    border: 0.01rem solid rgb(13, 72, 184);
+    border-radius: 0.32rem;
+}
+
+#son /*表单背景和边框*/
+{
+    width: 22rem;
+    height: 17.5rem; 
+    position: relative;
+    overflow: hidden;
+    padding: 0.32rem 0.2rem 0.82rem;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5%;
+    text-align:center;
+}
+ #son
+{
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+}

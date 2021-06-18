@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="font-size: 20px">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>Bootstrap 101 Template</title>
+    <link href="lib/bootstarp/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="dropdown header-dropdown header-extend clearfix">
+            <button class="btn btn-default dropdown-toggle header-dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu header-dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">个人信息</a></li>
+                <li><a href="#">设置</a></li>
+
+            </ul>
+        </div>
+        <a href="stastics.html"><span class="glyphicon glyphicon-signal  header-count" ></span></a>
+    </div>
+    <div class="content">
+        <table class="table table-condensed .table-hover">
+            <tbody id="tb-body">
+            <tr>
+                <th>时间</th>
+                <th>事件</th>
+                <th>金额</th>
+                <th>修改</th>
+                <th>删除</th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+        <div class="row myinput" style="display: none">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" class=" typeInput" placeholder="" name="type">
+                    <input type="text" class="form-control money" placeholder="金额" name="event">
+                    <span class="input-group-btn">
+        <button class="btn btn-default " type="button" id="gobtn">确定</button>
+      </span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div><a href="javascript:;" type="search"><img src="images/zaocan.jpg" alt=""><span>早餐</span></a></div>
+            <div><a href="javascript:;" type="tel"><img src="images/wucan.jpg" alt=""><span>午餐</span></a></div>
+            <div><a href="javascript:;" type="search"><img src="images/wancan.jpg" alt=""><span>晚餐</span></a></div>
+            <div><a href="javascript:;"><img src="images/lingshi.jpg" alt=""><span>零食</span></a></div>
+            <div><a href="javascript:;" ><img src="images/交通.jpg" alt=""><span>交通</span></a></div>
+            <div><a href="javascript:;" ><img src="images/gouwu.jpg" alt=""><span>购物</span></a></div>
+            <div><a href="javascript:;" ><img src="images/娱乐.jpg" alt=""><span>娱乐</span></a></div>
+            <div><a href="javascript:;" ><img src="images/旅游.jpg" alt=""><span>旅游</span></a></div>
+            <div><a href="javascript:;" ><img src="images/学习.jpg" alt=""><span>学习</span></a></div>
+        </div>
+    </div>
+</div>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstarp/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/connect.js"></script>
+</body>
+</html>
